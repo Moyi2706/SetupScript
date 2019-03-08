@@ -90,29 +90,9 @@ os.system('brew install dockutil')
 # Installing third party apps
 
 print "Installing Essential Apps"
+os.system('brew cask install spectacle the-unarchiver')
+os.system('brew cask install google-chrome spotify slack zoomus adobe-acrobat-reader microsoft-office google-backup-and-sync')
 
-while role == '':
-  role = raw_input("Which role is going to use this Mac? Dev, ux, qa or Default\n").strip()
-
-if role =='dev':
-  print "Installing Dev Essential Apps"
-  os.system('brew cask install spectacle the-unarchiver atom subime-text')
-  os.system('brew cask install google-chrome spotify slack zoomus adobe-acrobat-reader google-backup-and-sync microsoft-office java android-studio postman zeplin')
-
-elif role =='ux':
-  print "Installing UX Essential Apps"
-  os.system('brew cask install spectacle the-unarchiver atom')
-  os.system('brew cask install google-chrome spotify slack zoomus adobe-acrobat-reader google-backup-and-sync microsoft-office sketch adobe-creative-cloud ')
-
-elif role =='qa':
-  print "Installing UX Essential Apps"
-  os.system('brew cask install spectacle the-unarchiver atom subime-text')
-  os.system('brew cask install google-chrome spotify slack zoomus adobe-acrobat-reader google-backup-and-sync charles postman')
-
-else:
-  print "Installing default Essential Apps"
-  os.system('brew cask install spectacle the-unarchiver')
-  os.system('brew cask install google-chrome spotify slack zoomus adobe-acrobat-reader microsoft-office google-backup-and-sync')
 
 #Installing Fonts.
 print "Installing Fonts"
